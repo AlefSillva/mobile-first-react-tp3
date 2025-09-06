@@ -71,9 +71,8 @@ function App() {
         <main className="main">
           <div className="card-container">
             {cardData.map(({ imageUrl, title, description }, i) => (
-              <div className="card-item">
+              <div className="card-item" key={i}>
                 <Card
-                  key={i}
                   imgUrl={imageUrl}
                   title={title}
                   description={description}

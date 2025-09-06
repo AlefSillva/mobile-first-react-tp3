@@ -8,8 +8,6 @@
     width: 300px;
     max-width: 400px;
     min-height: 120px;
-    height: 180px;
-    max-height: 220px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,4 +26,5 @@
     height: 90px;
     border-radius: 4px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
