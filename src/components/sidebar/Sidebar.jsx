@@ -4,13 +4,13 @@ export default function Sidebar() {
   return (
     <ul className="sidebar">
       <li className="item-sidebar">
-        <a href="#">Article 1</a>
+        <a href="#">Home</a>
       </li>
       <li className="item-sidebar">
-        <a href="#">Article 2</a>
+        <a href="#">About</a>
       </li>
       <li className="item-sidebar">
-        <a href="#">Article 3</a>
+        <a href="#">Contact</a>
       </li>
     </ul>
   );
