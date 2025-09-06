@@ -5,37 +5,60 @@ import Button from "./components/Button/Button.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Sidebar from "./components/sidebar/Sidebar.jsx";
 
-
 const cardData = [
   {
     id: 1,
     title: "Tópico 1",
     description: "Uma vista emocionante para se guardar na memória.",
-    imageUrl: "https://picsum.photos/400/250?random=1"
+    imageUrl: "https://picsum.photos/400/250?random=1",
   },
   {
     id: 2,
     title: "Tópico 2",
     description: "Descubra belas imagens para se apreciar.",
-    imageUrl: "https://picsum.photos/400/250?random=2"
+    imageUrl: "https://picsum.photos/400/250?random=2",
   },
   {
     id: 3,
     title: "Tópico 3",
     description: "Aproveite uma tarde tranquila para ver a beleza da natureza.",
-    imageUrl: "https://picsum.photos/400/250?random=3"
+    imageUrl: "https://picsum.photos/400/250?random=3",
   },
   {
     id: 4,
     title: "Tópico 4",
     description: "Observe de perto a beleza natural desta imagem.",
-    imageUrl: "https://picsum.photos/400/250?random=4"
+    imageUrl: "https://picsum.photos/400/250?random=4",
   },
   {
     id: 5,
     title: "Tópico 5",
     description: "Uma jornada para apreciar uma verdadeira obra de arte.",
-    imageUrl: "https://picsum.photos/400/250?random=5"
+    imageUrl: "https://picsum.photos/400/250?random=5",
+  },
+  {
+    id: 6,
+    title: "Tópico 5",
+    description: "Uma imagem que trás vibes positivas.",
+    imageUrl: "https://picsum.photos/400/250?random=5",
+  },
+  {
+    id: 7,
+    title: "Tópico 7",
+    description: "Uma cena inspiradora para despertar a imaginação.",
+    imageUrl: "https://picsum.photos/400/250?random=7",
+  },
+  {
+    id: 8,
+    title: "Tópico 8",
+    description: "Detalhes únicos que tornam cada imagem especial.",
+    imageUrl: "https://picsum.photos/400/250?random=8",
+  },
+  {
+    id: 9,
+    title: "Tópico 9",
+    description: "Um momento simples que transmite boas sensações.",
+    imageUrl: "https://picsum.photos/400/250?random=9",
   },
 ];
 
@@ -46,13 +69,17 @@ function App() {
 
       <div className="container">
         <main className="main">
-
-          <div className="card-item">
-            {cardData.map(({imageUrl, title, description}, i) => (
-              <>
-              <Card key={i} imgUrl={imageUrl} title={title} description={description} />
-              <Button/>
-              </>
+          <div className="card-container">
+            {cardData.map(({ imageUrl, title, description }, i) => (
+              <div className="card-item">
+                <Card
+                  key={i}
+                  imgUrl={imageUrl}
+                  title={title}
+                  description={description}
+                />
+                <Button />
+              </div>
             ))}
           </div>
         </main>
