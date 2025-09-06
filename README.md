@@ -1,12 +1,22 @@
-# React + Vite
+# Projeto de Layout Responsivo em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web construída com React que demonstra a criação de um layout responsivo, seguindo a abordagem **mobile-first** e utilizando **CSS Flexbox** para a organização dos componentes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Funcionalidades
 
-## Expanding the ESLint configuration
+* **Navegação Responsiva:** A barra de navegação no topo se adapta a diferentes tamanhos de tela. Em dispositivos móveis (até 768px), ela exibe apenas um ícone de menu, que ao ser clicado, revela os links de navegação. Em telas maiores, os links são exibidos lado a lado.
+* **Layout Adaptável:** A página se ajusta de um layout de coluna única em telas pequenas para um layout de duas colunas (conteúdo principal + barra lateral) em telas maiores, proporcionando uma melhor experiência de visualização.
+* **Componentes Reutilizáveis:** A aplicação é construída com componentes React (`Navbar`, `Card`, `Button`, `Footer`, `Sidebar`), cada um com seus próprios estilos, facilitando a manutenção e a reutilização do código.
+* **Rodapé Fixo:** O rodapé da página está sempre fixado na parte inferior, independentemente da quantidade de conteúdo na página.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### Tecnologias Utilizadas
+
+* **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+* **CSS Flexbox:** Utilizado para criar o layout responsivo e flexível da página.
+* **Abordagem Mobile-First:** O design foi construído priorizando a experiência em dispositivos móveis, para depois se adaptar a telas maiores.
+
+---
