@@ -20,3 +20,5 @@ Este projeto é uma aplicação web construída com React que demonstra a criaç
 * **Abordagem Mobile-First:** O design foi construído priorizando a experiência em dispositivos móveis, para depois se adaptar a telas maiores.
 
 ---
+
+🌍 [Ver projeto rodando](https://mobile-first-react-tp3.vercel.app/)
